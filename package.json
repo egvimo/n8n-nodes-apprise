@@ -30,11 +30,10 @@
 	"n8n": {
 		"n8nNodesApiVersion": 1,
 		"credentials": [
-			"dist/credentials/GithubIssuesApi.credentials.js",
-			"dist/credentials/GithubIssuesOAuth2Api.credentials.js"
+			"dist/credentials/AppriseApi.credentials.js"
 		],
 		"nodes": [
-			"dist/nodes/GithubIssues/GithubIssues.node.js"
+			"dist/nodes/Apprise/Apprise.node.js"
 		]
 	},
 	"devDependencies": {
