@@ -8,7 +8,7 @@ export class Apprise implements INodeType {
 		icon: 'file:../../icons/apprise.png',
 		group: ['input'],
 		version: 1,
-		subtitle: '={{$parameter["title"] || "Notification"}}',
+		subtitle: '={{$parameter["title"]}}',
 		description: 'Send notifications via Apprise API',
 		defaults: {
 			name: 'Apprise',
@@ -73,11 +73,63 @@ export class Apprise implements INodeType {
 				name: 'tag',
 				type: 'string',
 				default: '',
-				placeholder: 'info,warning',
-				description: 'Comma-separated tags to classify the message', routing: {
+				description: 'Comma-separated tags to classify the message',
+				routing: {
 					send: {
 						type: 'body',
 						property: 'tag',
+					},
+				},
+			},
+			{
+				displayName: 'Type',
+				name: 'type',
+				type: 'options',
+				default: 'info',
+				options: [
+					{
+						name: 'Info',
+						value: 'info',
+					},
+					{
+						name: 'Success',
+						value: 'success',
+					},
+					{
+						name: 'Warning',
+						value: 'warning',
+					},
+					{
+						name: 'Failure',
+						value: 'failure',
+					},
+				],
+				description: 'Notification type/priority level',
+			},
+			{
+				displayName: 'Format',
+				name: 'format',
+				type: 'options',
+				default: 'text',
+				options: [
+					{
+						name: 'Text',
+						value: 'text',
+					},
+					{
+						name: 'Markdown',
+						value: 'markdown',
+					},
+					{
+						name: 'HTML',
+						value: 'html',
+					},
+				],
+				description: 'Message format',
+				routing: {
+					send: {
+						type: 'body',
+						property: 'format',
 					},
 				},
 			},
