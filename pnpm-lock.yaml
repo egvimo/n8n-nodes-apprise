@@ -13,8 +13,8 @@ importers:
         version: 1.111.0
     devDependencies:
       '@n8n/node-cli':
-        specifier: 0.10.0
-        version: 0.10.0(@typescript-eslint/utils@8.44.1(eslint@9.37.0(jiti@2.6.0))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.0))(typescript@5.9.3)
+        specifier: 0.11.0
+        version: 0.11.0(@typescript-eslint/utils@8.44.1(eslint@9.37.0(jiti@2.6.0))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.0))(typescript@5.9.3)
       eslint:
         specifier: 9.37.0
         version: 9.37.0(jiti@2.6.0)
@@ -248,13 +248,13 @@ packages:
   '@n8n/errors@0.5.0':
     resolution: {integrity: sha512-0Vk1Eb3Uor+zeF/WVnuhFgJc51wEBTZNBlVQy3mvyr3sGmW86bP1jA7wmRsd0DZbswPwN0vNOl/TmkDTEopOtQ==}
 
-  '@n8n/eslint-plugin-community-nodes@0.2.0':
-    resolution: {integrity: sha512-KcfXlpAM1tF+1z6trxKzrvvEsCJPR3Gt6v+V+yjHxuDed4tBU5J5CeCrDH0Rk5zcKJ3u0QsodRKcHM1hUTVoeQ==}
+  '@n8n/eslint-plugin-community-nodes@0.4.0':
+    resolution: {integrity: sha512-SFbf1cGPELoYONbZlxUp43Bg5Q17O5VrIrU3T+ucjEXcqYFtCq6QT4AV4njRRH2yrXivYaAWsoazj7Z49SxrIw==}
     peerDependencies:
       eslint: '>= 9'
 
-  '@n8n/node-cli@0.10.0':
-    resolution: {integrity: sha512-sam8igrZbftFSelzfPlmm+UQjAEsZypmYYue3CgUUdGhn6kAS7HUzguzFK6bkGsnNnK65DJOsm9Ft/fzeTOecQ==}
+  '@n8n/node-cli@0.11.0':
+    resolution: {integrity: sha512-uglitlNQaS2N971/mBgs+X1wTJ/omBx1IelmAp74mpp1N9WSNa5a9TUjZk98PjEEOL0ZBgI4Y/1kSMOg2WkOsQ==}
     hasBin: true
     peerDependencies:
       eslint: '>= 9'
@@ -2180,14 +2180,18 @@ snapshots:
     dependencies:
       callsites: 3.1.0
 
-  '@n8n/eslint-plugin-community-nodes@0.2.0(eslint@9.37.0(jiti@2.6.0))':
+  '@n8n/eslint-plugin-community-nodes@0.4.0(eslint@9.37.0(jiti@2.6.0))(typescript@5.9.3)':
     dependencies:
+      '@typescript-eslint/utils': 8.44.1(eslint@9.37.0(jiti@2.6.0))(typescript@5.9.3)
       eslint: 9.37.0(jiti@2.6.0)
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
 
-  '@n8n/node-cli@0.10.0(@typescript-eslint/utils@8.44.1(eslint@9.37.0(jiti@2.6.0))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.0))(typescript@5.9.3)':
+  '@n8n/node-cli@0.11.0(@typescript-eslint/utils@8.44.1(eslint@9.37.0(jiti@2.6.0))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.0))(typescript@5.9.3)':
     dependencies:
       '@clack/prompts': 0.11.0
-      '@n8n/eslint-plugin-community-nodes': 0.2.0(eslint@9.37.0(jiti@2.6.0))
+      '@n8n/eslint-plugin-community-nodes': 0.4.0(eslint@9.37.0(jiti@2.6.0))(typescript@5.9.3)
       '@oclif/core': 4.5.4
       change-case: 5.4.4
       eslint: 9.37.0(jiti@2.6.0)
