@@ -22,7 +22,8 @@
 		"lint:fix": "n8n-node lint --fix",
 		"release": "n8n-node release",
 		"preinstall": "npx only-allow pnpm",
-		"prepublishOnly": "n8n-node prerelease"
+		"prepublishOnly": "n8n-node prerelease",
+		"reset:database": "rm ~/.n8n-node-cli/.n8n/database.*"
 	},
 	"files": [
 		"dist"

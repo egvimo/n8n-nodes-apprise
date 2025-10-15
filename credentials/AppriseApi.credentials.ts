@@ -1,9 +1,10 @@
-import { ICredentialType, INodeProperties } from 'n8n-workflow';
+import { Icon, ICredentialType, INodeProperties } from 'n8n-workflow';
 
 export class AppriseApi implements ICredentialType {
 	name = 'appriseApi';
 	displayName = 'Apprise API';
 	documentationUrl = 'https://github.com/caronc/apprise-api';
+	icon: Icon = 'file:../icons/apprise.png';
 	properties: INodeProperties[] = [
 		{
 			displayName: 'Base URL',
