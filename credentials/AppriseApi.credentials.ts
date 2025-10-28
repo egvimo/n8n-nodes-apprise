@@ -1,9 +1,10 @@
-import { Icon, ICredentialType, INodeProperties } from 'n8n-workflow';
+import { Icon, ICredentialType, INodeProperties, IHttpRequestMethods } from 'n8n-workflow';
 
 export class AppriseApi implements ICredentialType {
 	name = 'appriseApi';
 	displayName = 'Apprise API';
 	documentationUrl = 'https://github.com/caronc/apprise-api';
+	// eslint-disable-next-line @n8n/community-nodes/icon-validation
 	icon: Icon = 'file:../icons/apprise.png';
 	properties: INodeProperties[] = [
 		{
@@ -16,7 +17,6 @@ export class AppriseApi implements ICredentialType {
 		{
 			displayName: 'Configuration Key',
 			name: 'configKey',
-			// eslint-disable-next-line n8n-nodes-base/cred-class-field-type-options-password-missing
 			type: 'string',
 			default: 'apprise',
 		},
@@ -34,4 +34,16 @@ export class AppriseApi implements ICredentialType {
 			default: '',
 		},
 	];
+
+	test = {
+        request: {
+            baseURL: '={{$credentials.baseUrl}}',
+            url: '/status',
+            method: 'GET' as IHttpRequestMethods,
+            auth: {
+                username: '={{$credentials.username}}',
+                password: '={{$credentials.password}}',
+            },
+        },
+    };
 }

@@ -4,7 +4,7 @@ export class Apprise implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Apprise',
 		name: 'apprise',
-		// eslint-disable-next-line n8n-nodes-base/node-class-description-icon-not-svg
+		// eslint-disable-next-line n8n-nodes-base/node-class-description-icon-not-svg,@n8n/community-nodes/icon-validation
 		icon: 'file:../../icons/apprise.png',
 		group: ['input'],
 		version: 1,
