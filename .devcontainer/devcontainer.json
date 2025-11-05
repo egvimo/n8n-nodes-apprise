@@ -1,19 +1,21 @@
 {
-  "name": "n8n custom nodes",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
-  "remoteUser": "node",
-  "containerUser": "node",
-  "customizations": {
-    "vscode": {
-      "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
-      }
-    }
-  },
-	"forwardPorts": [5678],
-  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces,type=bind,consistency=cached",
-  "workspaceFolder": "/workspaces",
-  "postCreateCommand": "pnpm install"
+    "name": "n8n custom nodes",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "node",
+    "containerUser": "node",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            }
+        }
+    },
+    "forwardPorts": [
+        5678
+    ],
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces,type=bind,consistency=cached",
+    "workspaceFolder": "/workspaces",
+    "postCreateCommand": "pnpm install"
 }

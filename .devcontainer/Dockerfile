@@ -10,9 +10,9 @@ ENV PATH="$PNPM_HOME:$PATH"
 
 # Create the directory and give ownership to node
 RUN mkdir -p /home/node/.pnpm-global/bin \
-  && chown -R node:node /home/node/.pnpm-global \
-  && su node -c "pnpm config set global-bin-dir /home/node/.pnpm-global/bin" \
-  && su node -c "pnpm config set global-dir /home/node/.pnpm-global"
+    && chown -R node:node /home/node/.pnpm-global \
+    && su node -c "pnpm config set global-bin-dir /home/node/.pnpm-global/bin" \
+    && su node -c "pnpm config set global-dir /home/node/.pnpm-global"
 
 # Switch back to node user
 USER node
