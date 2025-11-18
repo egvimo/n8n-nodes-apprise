@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       n8n-workflow:
-        specifier: 1.117.0
-        version: 1.117.0
+        specifier: 1.118.0
+        version: 1.118.0
     devDependencies:
       '@n8n/node-cli':
         specifier: 0.16.0
@@ -1463,8 +1463,8 @@ packages:
     resolution: {integrity: sha512-WWdIxpyjEn+FhQJQQv9aQAYlHoNVdzIzUySNV1gHUPDSdZJ3yZn7pAAbQcV7B56Mvu881q9FZV+0Vx2xC44VWA==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  n8n-workflow@1.117.0:
-    resolution: {integrity: sha512-6ITfRh6RpYZMI6XypHvtGsUqwxhAr+Ox2KY2DdQ32z6H9xhIQfAjxrSvE4tLQN1NiKDYTAjXx5CaLVEgMKmpvQ==}
+  n8n-workflow@1.118.0:
+    resolution: {integrity: sha512-fRW2StTAgXDxcZ6d/tF41oi9ALXKoC6gJoq4A9A9N7VBtxbPI/KjR6Cq8x5sQm361IpzK4SbE89Dua6k1k+fkA==}
 
   napi-postinstall@0.3.3:
     resolution: {integrity: sha512-uTp172LLXSxuSYHv/kou+f6KW3SMppU9ivthaVTXian9sOt3XM/zHYHpRZiLgQoxeWfYUnslNWQHF1+G71xcow==}
@@ -3446,7 +3446,7 @@ snapshots:
 
   mute-stream@2.0.0: {}
 
-  n8n-workflow@1.117.0:
+  n8n-workflow@1.118.0:
     dependencies:
       '@n8n/errors': 0.5.0
       '@n8n/tournament': 1.0.6
