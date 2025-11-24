@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       n8n-workflow:
-        specifier: 1.118.1
-        version: 1.118.1
+        specifier: 1.119.0
+        version: 1.119.0
     devDependencies:
       '@n8n/node-cli':
         specifier: 0.16.0
@@ -1322,6 +1322,10 @@ packages:
   json-stable-stringify-without-jsonify@1.0.1:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
 
+  jsonrepair@3.13.1:
+    resolution: {integrity: sha512-WJeiE0jGfxYmtLwBTEk8+y/mYcaleyLXWaqp5bJu0/ZTSeG0KQq/wWQ8pmnkKenEdN6pdnn6QtcoSUkbqDHWNw==}
+    hasBin: true
+
   jssha@3.3.1:
     resolution: {integrity: sha512-VCMZj12FCFMQYcFLPRm/0lOBbLi8uM2BhXPTqw3U4YAfs4AZfiApOoBLoN8cQE60Z50m1MYMTQVCfgF/KaCVhQ==}
 
@@ -1463,8 +1467,8 @@ packages:
     resolution: {integrity: sha512-WWdIxpyjEn+FhQJQQv9aQAYlHoNVdzIzUySNV1gHUPDSdZJ3yZn7pAAbQcV7B56Mvu881q9FZV+0Vx2xC44VWA==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  n8n-workflow@1.118.1:
-    resolution: {integrity: sha512-UzaiaIBzhjBJWm+eaEFdsCcA0KNbR+/ZppE6uoOjifrbvs3cjWe6m0VsVJ9NItTKouKIgygwr5ZTJPhKJ3jzJA==}
+  n8n-workflow@1.119.0:
+    resolution: {integrity: sha512-I8++rz9TLLCbZB5zuO7QKhE8xXVSLt9MWxf3Rpa+bUpHouWRBqnFkJB+8Dpg++gumUK4vevOgQ0cVo9AaL4Q9A==}
 
   napi-postinstall@0.3.3:
     resolution: {integrity: sha512-uTp172LLXSxuSYHv/kou+f6KW3SMppU9ivthaVTXian9sOt3XM/zHYHpRZiLgQoxeWfYUnslNWQHF1+G71xcow==}
@@ -3335,6 +3339,8 @@ snapshots:
 
   json-stable-stringify-without-jsonify@1.0.1: {}
 
+  jsonrepair@3.13.1: {}
+
   jssha@3.3.1: {}
 
   keyv@4.5.4:
@@ -3446,7 +3452,7 @@ snapshots:
 
   mute-stream@2.0.0: {}
 
-  n8n-workflow@1.118.1:
+  n8n-workflow@1.119.0:
     dependencies:
       '@n8n/errors': 0.5.0
       '@n8n/tournament': 1.0.6
@@ -3456,6 +3462,7 @@ snapshots:
       form-data: 4.0.0
       jmespath: 0.16.0
       js-base64: 3.7.2
+      jsonrepair: 3.13.1
       jssha: 3.3.1
       lodash: 4.17.21
       luxon: 3.4.4
