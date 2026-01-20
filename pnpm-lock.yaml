@@ -13,8 +13,8 @@ importers:
         version: 2.4.2
     devDependencies:
       '@n8n/node-cli':
-        specifier: 0.17.0
-        version: 0.17.0(@typescript-eslint/utils@8.44.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
+        specifier: 0.18.0
+        version: 0.18.0(@typescript-eslint/utils@8.44.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       eslint:
         specifier: 9.39.2
         version: 9.39.2(jiti@2.6.1)
@@ -253,8 +253,8 @@ packages:
     peerDependencies:
       eslint: '>= 9'
 
-  '@n8n/node-cli@0.17.0':
-    resolution: {integrity: sha512-/bcw5zfP4rVYnWR38X6D7juUHMmjT3MCGgGoVv/O+JAkJX7vz7CxEtw7knKJ/0msMU3UYOzy+9os2WkCennQtA==}
+  '@n8n/node-cli@0.18.0':
+    resolution: {integrity: sha512-yNoLoXXXvJqFeIwmtNHOxoZfBh0O8fuQ/BdMCNRSGnd1U1AlrytDQDEGTCRkJvudSwXHsQRZysx0xlv0qRVgcA==}
     hasBin: true
     peerDependencies:
       eslint: '>= 9'
@@ -2202,7 +2202,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@n8n/node-cli@0.17.0(@typescript-eslint/utils@8.44.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)':
+  '@n8n/node-cli@0.18.0(@typescript-eslint/utils@8.44.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
       '@clack/prompts': 0.11.0
       '@n8n/eslint-plugin-community-nodes': 0.7.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
