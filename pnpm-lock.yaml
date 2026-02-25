@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       n8n-workflow:
-        specifier: 2.9.0
-        version: 2.9.0
+        specifier: 2.10.1
+        version: 2.10.1
     devDependencies:
       '@n8n/node-cli':
         specifier: 0.21.0
@@ -2197,8 +2197,8 @@ packages:
   n8n-workflow@2.10.0:
     resolution: {integrity: sha512-KNyOYcmp14jg1NmU2l3k/4QGcJTh+RnwoxIM+YE+fbZ3Bfk0c8sUOT6RFY5DbIDLU4VnO3Tt/rwc/GASs5Rtog==}
 
-  n8n-workflow@2.9.0:
-    resolution: {integrity: sha512-KTaMudpmbMZh0l6X5oqnhelKllGg8XYWH/v9449L4jX9+vFcmGaqp4HcAnau/CF3H3uNZL1qP0IgTb7r834hNA==}
+  n8n-workflow@2.10.1:
+    resolution: {integrity: sha512-wbTTOnrb/PJKWDYisxsk5k/E5yQK6MEWw7e+wNEtRn5IeYDK849GgcMesB0+2x7wlzj+LzAt0X7jvX2QeGhbGA==}
 
   napi-postinstall@0.3.3:
     resolution: {integrity: sha512-uTp172LLXSxuSYHv/kou+f6KW3SMppU9ivthaVTXian9sOt3XM/zHYHpRZiLgQoxeWfYUnslNWQHF1+G71xcow==}
@@ -3039,7 +3039,7 @@ snapshots:
     dependencies:
       '@types/node': 18.19.130
       extend: 3.0.2
-      form-data: 4.0.4
+      form-data: 4.0.5
       ibm-cloud-sdk-core: 5.4.7
     transitivePeerDependencies:
       - supports-color
@@ -3945,7 +3945,7 @@ snapshots:
   '@types/node-fetch@2.6.13':
     dependencies:
       '@types/node': 18.19.130
-      form-data: 4.0.4
+      form-data: 4.0.5
 
   '@types/node@18.19.130':
     dependencies:
@@ -4895,7 +4895,7 @@ snapshots:
       dotenv: 16.6.1
       extend: 3.0.2
       file-type: 16.5.4
-      form-data: 4.0.4
+      form-data: 4.0.5
       isstream: 0.1.2
       jsonwebtoken: 9.0.3
       mime-types: 2.1.35
@@ -5275,7 +5275,7 @@ snapshots:
       xml2js: 0.6.2
       zod: 3.25.67
 
-  n8n-workflow@2.9.0:
+  n8n-workflow@2.10.1:
     dependencies:
       '@n8n/errors': 0.6.0
       '@n8n/tournament': 1.0.6
