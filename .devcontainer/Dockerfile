@@ -1,5 +1,5 @@
 # Base image with Node.js and Corepack included (Node 22 recommended)
-FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:22
+FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:24
 
 # Enable and prepare pnpm via Corepack
 RUN corepack enable && corepack prepare pnpm@latest --activate
